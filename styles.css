@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+}
+**,*:before, *:after {
+    box-sizing: inherit;
+}
+/*color palette and styles
+{
+--light-blue: #007d7b;
+--black: #000000;
+--white: #ffffff;
+--font-family: Arial, Helvetica, sans-serif;
+}*/
+html {
+    background-color: black;
+    max-width: 1300px;
+}
+body{
+    background-color: #ffffff;
+    margin: 0 auto;
+    max-width: 800px;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    /*grid-template-rows: repeat(5, 1fr);*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+@media screen (min-width: 1300px) {
+    justify-content: right;
+}
+@media screen (min-width: 880px) {
+    justify-content: center;
+}
+#gallery{
+    display: grid;
+    grid-template-rows: 4;
+}
+h1{
+    grid-template-rows: 1;
+    line-height: 20px;
+    color: #007d7b;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 10px;
+}
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    padding: 1rem;
+    list-style-type: none;
+
+    padding: 0; 
+}
+.navigation{
+    background-color: black;
+    grid-template-rows: 1;
+}
+.container > * {
+    grid-column: 1 / span 12;
+}
+img {
+    display: inline-block;
+    margin: 0;
+}
+figcaption{
+    text-align: center;
+}
+[href="#top"] {
+    position: fixed;
+    bottom: 0px;
+    border: #ffffff;
+    border-width: 1px;
+}
+p {
+    font-size: 1.25em;
+}
+figcaption, label, input, small{
+    font-size: 1em;
+}
+nav a {
+    font-size: 1.5em;
+    text-decoration: none;
+    margin-top: 0;
+    color: #ffffff;
+    padding: 5px 8px;
+}
+h1 {
+    font-size: 3em;
+}
+h2 {
+    font-size: 2em;
+    text-align: center;
+}
+blockquote{
+    margin-left: 15px;
+}
+.form{
+    background-color: black;
+    color: #ffffff;
+    padding: 1rem;
+    position: relative;
+    justify-items: center;
+}
+input{
+    width: 75%;
+    padding: 10px 20px;
+    margin-top: 30px;
+    
+}
+.form label{
+   text-align: center;
+}
+.form h2{
+    text-align: center;
+}
+#my-submit{
+    background-color: #007d7b;
+    color: #ffffff;
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.real-footer{
+    background-color: black;
+    color: #ffffff;
+    text-align: center;
+}
